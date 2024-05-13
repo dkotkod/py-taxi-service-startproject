@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 
 from taxi.models import Car, Manufacturer, Driver
 
-# Register your models here.
+
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     search_fields = ["model", ]
